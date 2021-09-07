@@ -1,0 +1,391 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SistemaPlanillaMovilidad
+</name>
+</assembly>
+<members>
+<member name="T:SistemaPlanillaMovilidad.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:SistemaPlanillaMovilidad.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:SistemaPlanillaMovilidad.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:SistemaPlanillaMovilidad.My.Resources.Resources.excel_40px">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SistemaPlanillaMovilidad.My.Resources.Resources.excel1_40px">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SistemaPlanillaMovilidad.My.Resources.Resources.guardar_40px">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SistemaPlanillaMovilidad.My.Resources.Resources.limpiar_40px">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SistemaPlanillaMovilidad.My.Resources.Resources.nuevo_usuario_40px">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SistemaPlanillaMovilidad.My.Resources.Resources.tacho_basura_40px">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.MODULO_DESTINODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.MODULO_ORIGENDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.REPORTESDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.USUARIODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.VIAJESDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.SP_CRUD_VIAJEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.SP_MOSTRAR_DNIDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.SP_MOSTRAR_TOTALDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.MODULO_DESTINORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.MODULO_ORIGENRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.REPORTESRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.USUARIORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.VIAJESRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.SP_CRUD_VIAJERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.SP_MOSTRAR_DNIRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.SP_MOSTRAR_TOTALRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.MODULO_DESTINORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.MODULO_ORIGENRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.REPORTESRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.USUARIORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.VIAJESRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.SP_CRUD_VIAJERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.SP_MOSTRAR_DNIRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDAD.SP_MOSTRAR_TOTALRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.MODULO_DESTINOTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.MODULO_ORIGENTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.REPORTESTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.USUARIOTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.VIAJESTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.SP_CRUD_VIAJETableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.SP_MOSTRAR_DNITableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.SP_MOSTRAR_TOTALTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.QueriesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.TableAdapterManager.UpdateUpdatedRows(SistemaPlanillaMovilidad.BDMOVILIDAD,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.TableAdapterManager.UpdateInsertedRows(SistemaPlanillaMovilidad.BDMOVILIDAD,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.TableAdapterManager.UpdateDeletedRows(SistemaPlanillaMovilidad.BDMOVILIDAD,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.TableAdapterManager.UpdateAll(SistemaPlanillaMovilidad.BDMOVILIDAD)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSet.MODULOSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSet.REPORTESDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSet.USUARIODataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSet.VIAJESDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSet.MODULOSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSet.REPORTESRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSet.USUARIORow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSet.VIAJESRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSet.MODULOSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSet.REPORTESRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSet.USUARIORowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSet.VIAJESRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSetTableAdapters.MODULOSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSetTableAdapters.REPORTESTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSetTableAdapters.USUARIOTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSetTableAdapters.VIAJESTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:SistemaPlanillaMovilidad.BDMOVILIDADDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(SistemaPlanillaMovilidad.BDMOVILIDADDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:SistemaPlanillaMovilidad.BDMOVILIDADDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(SistemaPlanillaMovilidad.BDMOVILIDADDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:SistemaPlanillaMovilidad.BDMOVILIDADDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(SistemaPlanillaMovilidad.BDMOVILIDADDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:SistemaPlanillaMovilidad.BDMOVILIDADDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:SistemaPlanillaMovilidad.BDMOVILIDADDataSetTableAdapters.TableAdapterManager.UpdateAll(SistemaPlanillaMovilidad.BDMOVILIDADDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:SistemaPlanillaMovilidad.BDMOVILIDADDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>
