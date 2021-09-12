@@ -18,10 +18,10 @@ Public Class Conexion
 
     Public Sub Conectar()
 
-        Server = "192.168.0.22"
+        Server = "192.168.2.5"
         NombreBD = "BDMOVILIDAD"
         Usuario = "sa"
-        Password = "123servidorASD"
+        Password = "@servertksistemas/75482648#"
         CadenaConexion = "Data Source=" & Server & ";Initial Catalog=" & NombreBD & ";Persist Security Info=True;User ID=" & Usuario & ";Password=" & Password
 
         Conexion = New SqlConnection(CadenaConexion)
@@ -49,7 +49,32 @@ Public Class Conexion
 
     End Sub
 
+    Public Sub ListarUsuarios(Cbox As ComboBox)
+        DataTable = New DataTable
 
+        Conectar()
+        Me.Conexion.Open()
+
+        SqlDataAdapter = New SqlDataAdapter("EXEC SP_LISTAR_LOCAL", Me.Conexion)
+
+        SqlDataAdapter.Fill(DataTable)
+        Cbox.DisplayMember = DataTable.Rows(0).Item(0)
+        Me.Conexion.Close()
+    End Sub
+
+    Public Sub MostrarCbox(Cbox As ComboBox, Opcion As String)
+        DataTable = New DataTable
+
+        Conectar()
+        Me.Conexion.Open()
+
+        SqlDataAdapter = New SqlDataAdapter("EXEC SP_LISTAR_LOCAL " & Opcion, Me.Conexion)
+
+        SqlDataAdapter.Fill(DataTable)
+        Cbox.DisplayMember = DataTable.Rows(0).Item(0)
+        Cbox.ValueMember = DataTable.Rows(0).Item(1)
+        Me.Conexion.Close()
+    End Sub
 
     Public Sub CrearReporte(Usuario As Integer)
         Conectar()

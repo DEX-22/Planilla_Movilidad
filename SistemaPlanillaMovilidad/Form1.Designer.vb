@@ -22,10 +22,9 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtMonto = New System.Windows.Forms.NumericUpDown()
         Me.btnLimpiar = New System.Windows.Forms.Button()
@@ -41,12 +40,8 @@ Partial Class Form1
         Me.rbtnVuelta = New System.Windows.Forms.RadioButton()
         Me.rbtnIda = New System.Windows.Forms.RadioButton()
         Me.cboxDestino = New System.Windows.Forms.ComboBox()
-        Me.MODULODESTINOBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.BDMOVILIDADBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.BDMOVILIDAD = New SistemaPlanillaMovilidad.BDMOVILIDAD()
         Me.cboxFecha = New System.Windows.Forms.DateTimePicker()
         Me.cboxOrigen = New System.Windows.Forms.ComboBox()
-        Me.MODULOORIGENBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.btnNuevoUsuario = New System.Windows.Forms.Button()
@@ -55,25 +50,16 @@ Partial Class Form1
         Me.txtDNI = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.cboxNombre = New System.Windows.Forms.ComboBox()
-        Me.USUARIOBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TablaViajes = New System.Windows.Forms.DataGridView()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtTotal = New System.Windows.Forms.TextBox()
-        Me.MODULO_ORIGENTableAdapter = New SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.MODULO_ORIGENTableAdapter()
-        Me.MODULO_DESTINOTableAdapter = New SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.MODULO_DESTINOTableAdapter()
-        Me.USUARIOTableAdapter = New SistemaPlanillaMovilidad.BDMOVILIDADTableAdapters.USUARIOTableAdapter()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.cboxMeses = New System.Windows.Forms.ComboBox()
         Me.btnGenerarExcel = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.txtMonto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
-        CType(Me.MODULODESTINOBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BDMOVILIDADBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BDMOVILIDAD, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MODULOORIGENBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.USUARIOBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TablaViajes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -248,8 +234,6 @@ Partial Class Form1
         'cboxDestino
         '
         Me.cboxDestino.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.cboxDestino.DataSource = Me.MODULODESTINOBindingSource
-        Me.cboxDestino.DisplayMember = "LOCAL"
         Me.cboxDestino.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.cboxDestino.FormattingEnabled = True
         Me.cboxDestino.Location = New System.Drawing.Point(25, 172)
@@ -257,21 +241,6 @@ Partial Class Form1
         Me.cboxDestino.Size = New System.Drawing.Size(163, 28)
         Me.cboxDestino.TabIndex = 2
         Me.cboxDestino.ValueMember = "MODULO_ID"
-        '
-        'MODULODESTINOBindingSource
-        '
-        Me.MODULODESTINOBindingSource.DataMember = "MODULO_DESTINO"
-        Me.MODULODESTINOBindingSource.DataSource = Me.BDMOVILIDADBindingSource
-        '
-        'BDMOVILIDADBindingSource
-        '
-        Me.BDMOVILIDADBindingSource.DataSource = Me.BDMOVILIDAD
-        Me.BDMOVILIDADBindingSource.Position = 0
-        '
-        'BDMOVILIDAD
-        '
-        Me.BDMOVILIDAD.DataSetName = "BDMOVILIDAD"
-        Me.BDMOVILIDAD.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'cboxFecha
         '
@@ -287,8 +256,6 @@ Partial Class Form1
         'cboxOrigen
         '
         Me.cboxOrigen.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.cboxOrigen.DataSource = Me.MODULOORIGENBindingSource
-        Me.cboxOrigen.DisplayMember = "LOCAL"
         Me.cboxOrigen.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.cboxOrigen.FormattingEnabled = True
         Me.cboxOrigen.Location = New System.Drawing.Point(25, 104)
@@ -296,11 +263,6 @@ Partial Class Form1
         Me.cboxOrigen.Size = New System.Drawing.Size(163, 28)
         Me.cboxOrigen.TabIndex = 0
         Me.cboxOrigen.ValueMember = "MODULO_ID"
-        '
-        'MODULOORIGENBindingSource
-        '
-        Me.MODULOORIGENBindingSource.DataMember = "MODULO_ORIGEN"
-        Me.MODULOORIGENBindingSource.DataSource = Me.BDMOVILIDADBindingSource
         '
         'GroupBox2
         '
@@ -390,8 +352,6 @@ Partial Class Form1
         '
         'cboxNombre
         '
-        Me.cboxNombre.DataSource = Me.USUARIOBindingSource
-        Me.cboxNombre.DisplayMember = "NOMBRES"
         Me.cboxNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
         Me.cboxNombre.FormattingEnabled = True
         Me.cboxNombre.Location = New System.Drawing.Point(117, 33)
@@ -400,49 +360,45 @@ Partial Class Form1
         Me.cboxNombre.TabIndex = 0
         Me.cboxNombre.ValueMember = "USUARIO_ID"
         '
-        'USUARIOBindingSource
-        '
-        Me.USUARIOBindingSource.DataMember = "USUARIO"
-        Me.USUARIOBindingSource.DataSource = Me.BDMOVILIDADBindingSource
-        '
         'TablaViajes
         '
+        Me.TablaViajes.AccessibleDescription = "LOCAL"
         Me.TablaViajes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.TablaViajes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.TablaViajes.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.TablaViajes.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TablaViajes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.TablaViajes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.TablaViajes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.TablaViajes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.TablaViajes.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.TablaViajes.DefaultCellStyle = DataGridViewCellStyle5
         Me.TablaViajes.GridColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.TablaViajes.Location = New System.Drawing.Point(250, 124)
         Me.TablaViajes.MultiSelect = False
         Me.TablaViajes.Name = "TablaViajes"
         Me.TablaViajes.ReadOnly = True
         Me.TablaViajes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(116, Byte), Integer), CType(CType(125, Byte), Integer), CType(CType(140, Byte), Integer))
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.TablaViajes.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(116, Byte), Integer), CType(CType(125, Byte), Integer), CType(CType(140, Byte), Integer))
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.TablaViajes.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.TablaViajes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.TablaViajes.Size = New System.Drawing.Size(700, 351)
         Me.TablaViajes.TabIndex = 2
@@ -466,18 +422,6 @@ Partial Class Form1
         Me.txtTotal.Name = "txtTotal"
         Me.txtTotal.Size = New System.Drawing.Size(122, 30)
         Me.txtTotal.TabIndex = 10
-        '
-        'MODULO_ORIGENTableAdapter
-        '
-        Me.MODULO_ORIGENTableAdapter.ClearBeforeFill = True
-        '
-        'MODULO_DESTINOTableAdapter
-        '
-        Me.MODULO_DESTINOTableAdapter.ClearBeforeFill = True
-        '
-        'USUARIOTableAdapter
-        '
-        Me.USUARIOTableAdapter.ClearBeforeFill = True
         '
         'Label9
         '
@@ -541,13 +485,8 @@ Partial Class Form1
         CType(Me.txtMonto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
-        CType(Me.MODULODESTINOBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BDMOVILIDADBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BDMOVILIDAD, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MODULOORIGENBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.USUARIOBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TablaViajes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -583,14 +522,6 @@ Partial Class Form1
     Friend WithEvents txtMonto As NumericUpDown
     Private WithEvents cboxDestino As ComboBox
     Private WithEvents cboxOrigen As ComboBox
-    Friend WithEvents BDMOVILIDADBindingSource As BindingSource
-    Friend WithEvents BDMOVILIDAD As BDMOVILIDAD
-    Friend WithEvents MODULOORIGENBindingSource As BindingSource
-    Friend WithEvents MODULO_ORIGENTableAdapter As BDMOVILIDADTableAdapters.MODULO_ORIGENTableAdapter
-    Friend WithEvents MODULODESTINOBindingSource As BindingSource
-    Friend WithEvents MODULO_DESTINOTableAdapter As BDMOVILIDADTableAdapters.MODULO_DESTINOTableAdapter
-    Friend WithEvents USUARIOBindingSource As BindingSource
-    Friend WithEvents USUARIOTableAdapter As BDMOVILIDADTableAdapters.USUARIOTableAdapter
     Friend WithEvents Label9 As Label
     Friend WithEvents cboxMeses As ComboBox
 End Class

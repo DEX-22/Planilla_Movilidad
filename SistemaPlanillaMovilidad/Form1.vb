@@ -23,13 +23,9 @@ Public Class Form1
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: esta línea de código carga datos en la tabla 'BDMOVILIDAD.USUARIO' Puede moverla o quitarla según sea necesario.
-        Me.USUARIOTableAdapter.Fill(Me.BDMOVILIDAD.USUARIO)
-        'TODO: esta línea de código carga datos en la tabla 'BDMOVILIDAD.MODULO_DESTINO' Puede moverla o quitarla según sea necesario.
-        Me.MODULO_DESTINOTableAdapter.Fill(Me.BDMOVILIDAD.MODULO_DESTINO)
-        'TODO: esta línea de código carga datos en la tabla 'BDMOVILIDAD.MODULO_ORIGEN' Puede moverla o quitarla según sea necesario.
-        Me.MODULO_ORIGENTableAdapter.Fill(Me.BDMOVILIDAD.MODULO_ORIGEN)
 
+        SQL.MostrarCbox(Me.cboxOrigen, "O")
+        SQL.MostrarCbox(Me.cboxDestino, "D")
 
         Me.cboxNombre.Text = "Seleccione"
         Me.cboxNombre.SelectedValue = 1
