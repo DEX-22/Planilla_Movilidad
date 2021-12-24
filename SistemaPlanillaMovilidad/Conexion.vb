@@ -18,13 +18,13 @@ Public Class Conexion
 
     Public Sub Conectar()
 
-        Server = "192.168.2.5"
-        NombreBD = "BDMOVILIDAD"
-        Usuario = "sa"
-        Password = "@servertksistemas/75482648#"
-        CadenaConexion = "Data Source=" & Server & ";Initial Catalog=" & NombreBD & ";Persist Security Info=True;User ID=" & Usuario & ";Password=" & Password
+        Me.Server = "SISTEMAS"
+        Me.NombreBD = "BDMOVILIDAD"
+        Me.Usuario = "sa"
+        Me.Password = "@servertksistemas/75482648#"
+        Me.CadenaConexion = "Data Source=" & Server & ";Initial Catalog=" & NombreBD & ";Persist Security Info=True;User ID=" & Usuario & ";Password=" & Password
 
-        Conexion = New SqlConnection(CadenaConexion)
+        Me.Conexion = New SqlConnection(CadenaConexion)
 
 
 
@@ -50,15 +50,19 @@ Public Class Conexion
     End Sub
 
     Public Sub ListarUsuarios(Cbox As ComboBox)
+
+
         DataTable = New DataTable
 
         Conectar()
         Me.Conexion.Open()
 
-        SqlDataAdapter = New SqlDataAdapter("EXEC SP_LISTAR_LOCAL", Me.Conexion)
+        SqlDataAdapter = New SqlDataAdapter("EXEC SP_LISTAR_USUARIOS", Me.Conexion)
 
         SqlDataAdapter.Fill(DataTable)
-        Cbox.DisplayMember = DataTable.Rows(0).Item(0)
+        Cbox.DataSource = DataTable
+        Cbox.DisplayMember = "NOMBRES"
+        Cbox.ValueMember = "USUARIO_ID"
         Me.Conexion.Close()
     End Sub
 
@@ -71,8 +75,9 @@ Public Class Conexion
         SqlDataAdapter = New SqlDataAdapter("EXEC SP_LISTAR_LOCAL " & Opcion, Me.Conexion)
 
         SqlDataAdapter.Fill(DataTable)
-        Cbox.DisplayMember = DataTable.Rows(0).Item(0)
-        Cbox.ValueMember = DataTable.Rows(0).Item(1)
+        Cbox.DataSource = DataTable
+        Cbox.DisplayMember = "LOCAL"
+        Cbox.ValueMember = "MODULO_ID"
         Me.Conexion.Close()
     End Sub
 

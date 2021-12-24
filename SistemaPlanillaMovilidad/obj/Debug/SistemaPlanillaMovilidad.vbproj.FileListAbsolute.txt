@@ -24,3 +24,16 @@ E:\Movilidad\Planilla_Movilidad\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanil
 E:\Movilidad\Planilla_Movilidad\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanillaMovilidad.exe
 E:\Movilidad\Planilla_Movilidad\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanillaMovilidad.xml
 E:\Movilidad\Planilla_Movilidad\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanillaMovilidad.pdb
+E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\bin\Debug\SistemaPlanillaMovilidad.exe.config
+E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\bin\Debug\SistemaPlanillaMovilidad.exe
+E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\bin\Debug\SistemaPlanillaMovilidad.pdb
+E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\bin\Debug\SistemaPlanillaMovilidad.xml
+E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanillaMovilidad.vbprojAssemblyReference.cache
+E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanillaMovilidad.vbproj.ResolveComReference.cache
+E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanillaMovilidad.Form1.resources
+E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanillaMovilidad.Resources.resources
+E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanillaMovilidad.vbproj.GenerateResource.cache
+E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanillaMovilidad.vbproj.CoreCompileInputs.cache
+E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanillaMovilidad.exe
+E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanillaMovilidad.xml
+E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanillaMovilidad.pdb

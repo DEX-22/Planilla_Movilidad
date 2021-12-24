@@ -24,11 +24,12 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        SQL.ListarUsuarios(Me.cboxNombre)
         SQL.MostrarCbox(Me.cboxOrigen, "O")
         SQL.MostrarCbox(Me.cboxDestino, "D")
 
-        Me.cboxNombre.Text = "Seleccione"
-        Me.cboxNombre.SelectedValue = 1
+        'Me.cboxNombre.Text = "Seleccione"
+        'Me.cboxNombre.SelectedValue = 1
         Me.cboxFecha.Enabled = False
         Me.cboxOrigen.Enabled = False
         Me.cboxDestino.Enabled = False
