@@ -1,4 +1,5 @@
 ﻿Imports SistemaPlanillaMovilidad.Conexion
+Imports SistemaPlanillaMovilidad.RegistrarUsuario
 Imports System.IO
 Imports Microsoft.Office.Interop.Excel
 Imports Microsoft.Office.Core
@@ -8,6 +9,7 @@ Imports System.Data
 Public Class Form1
 
     Dim SQL As New Conexion
+    Dim NuevoUsuario As New RegistrarUsuario
     Dim Id As Integer
     Dim Usuario As Integer
     Dim Origen As Integer
@@ -49,9 +51,9 @@ Public Class Form1
 
 
 
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
 
-        ActivarNuevoUsuario(True)
+        '  ActivarNuevoUsuario(True)
 
     End Sub
 
@@ -73,32 +75,16 @@ Public Class Form1
         Me.btnLimpiar.BackColor = Color.FromArgb(47, 53, 66)
 
         Me.cboxNombre.Enabled = False
+        Me.btnNuevoUsuario.Enabled = False
+        Me.btnNuevoUsuario.Cursor = Cursors.Arrow
         Me.btnCrearRegistro.Enabled = False
+        Me.btnCrearRegistro.Cursor = Cursors.Arrow
 
 
     End Sub
 
-    Private Sub ActivarNuevoUsuario(opcion As Boolean)
 
-        If opcion Then
-            Me.btnNuevoUsuario.Enabled = True
-            Me.btnNuevoUsuario.BackColor = Color.FromArgb(47, 53, 66)
-            Me.txtDNI.Enabled = True
-            Me.btnCrearRegistro.Enabled = False
-        Else
-            Me.btnNuevoUsuario.Enabled = False
-            Me.btnNuevoUsuario.BackColor = Color.FromArgb(87, 96, 111)
-            Me.txtDNI.Enabled = False
-        End If
 
-    End Sub
-    Private Sub btnNuevoUsuario_Click(sender As Object, e As EventArgs) Handles btnNuevoUsuario.Click
-
-        SQL.CrearUsuario(Me.cboxNombre.Text, Me.txtDNI.Text)
-        ActivarNuevoUsuario(False)
-        LimpiarDatosPersonales()
-
-    End Sub
 
 
 
@@ -235,5 +221,11 @@ Public Class Form1
             ' SQL.EliminarViaje(Me.Id)
             'SQL.ListarViajes(TablaViajes)
         End If
+    End Sub
+
+    Private Sub btnNuevoUsuario_Click(sender As Object, e As EventArgs) Handles btnNuevoUsuario.Click
+        NuevoUsuario.StartPosition = FormStartPosition.CenterScreen
+        NuevoUsuario.Show()
+
     End Sub
 End Class
