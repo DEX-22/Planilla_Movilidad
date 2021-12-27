@@ -10,6 +10,7 @@ Public Class Form1
 
     Dim SQL As New Conexion
     Dim NuevoUsuario As New RegistrarUsuario
+    Dim NuevoLocal As New NuevaDireccion
     Dim Id As Integer
     Dim Usuario As Integer
     Dim Origen As Integer
@@ -27,13 +28,15 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         SQL.ListarUsuarios(Me.cboxNombre)
-        SQL.MostrarCbox(Me.cboxOrigen, "O")
-        SQL.MostrarCbox(Me.cboxDestino, "D")
+        SQL.MostrarLocalCbox(Me.cboxOrigen, "O")
+        SQL.MostrarLocalCbox(Me.cboxDestino, "D")
 
         'Me.cboxNombre.Text = "Seleccione"
         'Me.cboxNombre.SelectedValue = 1
         Me.cboxFecha.Enabled = False
         Me.cboxOrigen.Enabled = False
+        Me.btnNuevoOrigen.Enabled = False
+        Me.btnNuevoDestino.Enabled = False
         Me.cboxDestino.Enabled = False
         Me.rbtnIda.Enabled = False
         Me.rbtnVuelta.Enabled = False
@@ -63,6 +66,8 @@ Public Class Form1
         Me.cboxFecha.Enabled = True
         Me.cboxOrigen.Enabled = True
         Me.cboxDestino.Enabled = True
+        Me.btnNuevoOrigen.Enabled = True
+        Me.btnNuevoDestino.Enabled = True
         Me.rbtnIda.Enabled = True
         Me.rbtnVuelta.Enabled = True
         Me.txtMonto.Enabled = True
@@ -209,7 +214,7 @@ Public Class Form1
         If e.RowIndex >= 0 Then
             TablaViajes.CurrentCell = TablaViajes.Item(0, e.RowIndex)
 
-            Me.Id = TablaViajes.CurrentCell.Value
+            Me.Id = SQL.SeleccionarViaje((TablaViajes.Item(3, e.RowIndex), TablaViajes.Item(4, e.RowIndex)) 'TablaViajes.CurrentCell.Value
 
         End If
     End Sub
@@ -227,5 +232,15 @@ Public Class Form1
         NuevoUsuario.StartPosition = FormStartPosition.CenterScreen
         NuevoUsuario.Show()
 
+    End Sub
+
+    Private Sub btnNuevoOrigen_Click(sender As Object, e As EventArgs) Handles btnNuevoOrigen.Click
+        NuevoLocal.StartPosition = FormStartPosition.CenterScreen
+        NuevoLocal.Show()
+    End Sub
+
+    Private Sub btnNuevoDestino_Click(sender As Object, e As EventArgs) Handles btnNuevoDestino.Click
+        NuevoLocal.StartPosition = FormStartPosition.CenterScreen
+        NuevoLocal.Show()
     End Sub
 End Class

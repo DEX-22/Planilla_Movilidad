@@ -38,3 +38,4 @@ E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanill
 E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanillaMovilidad.xml
 E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanillaMovilidad.pdb
 E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanillaMovilidad.RegistrarUsuario.resources
+E:\asd\Planilla_Movilidad-main\SistemaPlanillaMovilidad\obj\Debug\SistemaPlanillaMovilidad.NuevaDireccion.resources

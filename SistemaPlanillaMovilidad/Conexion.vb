@@ -48,6 +48,16 @@ Public Class Conexion
         Me.Conexion.Close()
 
     End Sub
+    Public Function SeleccionarViaje(Origen As Integer, Destino As Integer)
+        DataTable = New DataTable
+        Conectar()
+        Me.Conexion.Open()
+        SqlDataAdapter = New SqlDataAdapter("EXEC SP_SELECCIONAR_VIAJE " & Origen & "," & Destino, Me.Conexion)
+        SqlDataAdapter.Fill(DataTable)
+        Dim datos As Array = (DataTable.Rows(0).Item(0), DataTable.Rows(0).Item(1), DataTable.Rows(0).Item(2))
+        Return datos
+
+    End Function
 
     Public Sub ListarUsuarios(Cbox As ComboBox)
 
@@ -66,7 +76,7 @@ Public Class Conexion
         Me.Conexion.Close()
     End Sub
 
-    Public Sub MostrarCbox(Cbox As ComboBox, Opcion As String)
+    Public Sub MostrarLocalCbox(Cbox As ComboBox, Opcion As String)
         DataTable = New DataTable
 
         Conectar()
@@ -97,6 +107,16 @@ Public Class Conexion
         Consulta.ExecuteNonQuery()
         MsgBox("Usuario registrado con exito")
     End Sub
+
+    Public Sub CrearLocal(NombreLocal As String, Direccion As String, Opcion As Char)
+        Conectar()
+
+        Consulta = New SqlCommand("EXEC SP_NUEVO_ORIGEN_DESTINO '" & NombreLocal & "','" & Direccion & "','" & Opcion & "'", Me.Conexion)
+        Conexion.Open()
+        Consulta.ExecuteNonQuery()
+        MsgBox("Local registrado con exito")
+    End Sub
+
     Public Sub ListarViajes(Tabla As DataGridView)
 
         DataTable = New DataTable

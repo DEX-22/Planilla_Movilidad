@@ -22,14 +22,11 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtMonto = New System.Windows.Forms.NumericUpDown()
-        Me.btnLimpiar = New System.Windows.Forms.Button()
-        Me.btnEliminarViaje = New System.Windows.Forms.Button()
-        Me.btnAgregarViaje = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -43,8 +40,6 @@ Partial Class Form1
         Me.cboxFecha = New System.Windows.Forms.DateTimePicker()
         Me.cboxOrigen = New System.Windows.Forms.ComboBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.btnNuevoUsuario = New System.Windows.Forms.Button()
-        Me.btnCrearRegistro = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtDNI = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -54,7 +49,14 @@ Partial Class Form1
         Me.txtTotal = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.cboxMeses = New System.Windows.Forms.ComboBox()
+        Me.btnNuevoUsuario = New System.Windows.Forms.Button()
+        Me.btnCrearRegistro = New System.Windows.Forms.Button()
         Me.btnGenerarExcel = New System.Windows.Forms.Button()
+        Me.btnNuevoDestino = New System.Windows.Forms.Button()
+        Me.btnNuevoOrigen = New System.Windows.Forms.Button()
+        Me.btnLimpiar = New System.Windows.Forms.Button()
+        Me.btnEliminarViaje = New System.Windows.Forms.Button()
+        Me.btnAgregarViaje = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.txtMonto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
@@ -65,6 +67,8 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.GroupBox1.Controls.Add(Me.btnNuevoDestino)
+        Me.GroupBox1.Controls.Add(Me.btnNuevoOrigen)
         Me.GroupBox1.Controls.Add(Me.txtMonto)
         Me.GroupBox1.Controls.Add(Me.btnLimpiar)
         Me.GroupBox1.Controls.Add(Me.btnEliminarViaje)
@@ -96,47 +100,6 @@ Partial Class Form1
         Me.txtMonto.Size = New System.Drawing.Size(93, 30)
         Me.txtMonto.TabIndex = 14
         '
-        'btnLimpiar
-        '
-        Me.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.btnLimpiar.BackgroundImage = Global.SistemaPlanillaMovilidad.My.Resources.Resources.limpiar_40px
-        Me.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLimpiar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.btnLimpiar.Location = New System.Drawing.Point(142, 450)
-        Me.btnLimpiar.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnLimpiar.Name = "btnLimpiar"
-        Me.btnLimpiar.Size = New System.Drawing.Size(46, 46)
-        Me.btnLimpiar.TabIndex = 13
-        Me.btnLimpiar.UseVisualStyleBackColor = False
-        '
-        'btnEliminarViaje
-        '
-        Me.btnEliminarViaje.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.btnEliminarViaje.BackgroundImage = Global.SistemaPlanillaMovilidad.My.Resources.Resources.tacho_basura_40px
-        Me.btnEliminarViaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnEliminarViaje.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEliminarViaje.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.btnEliminarViaje.Location = New System.Drawing.Point(77, 450)
-        Me.btnEliminarViaje.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnEliminarViaje.Name = "btnEliminarViaje"
-        Me.btnEliminarViaje.Size = New System.Drawing.Size(46, 46)
-        Me.btnEliminarViaje.TabIndex = 12
-        Me.btnEliminarViaje.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.btnEliminarViaje.UseVisualStyleBackColor = False
-        '
-        'btnAgregarViaje
-        '
-        Me.btnAgregarViaje.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.btnAgregarViaje.BackgroundImage = Global.SistemaPlanillaMovilidad.My.Resources.Resources.guardar_40px
-        Me.btnAgregarViaje.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAgregarViaje.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.btnAgregarViaje.Location = New System.Drawing.Point(15, 450)
-        Me.btnAgregarViaje.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnAgregarViaje.Name = "btnAgregarViaje"
-        Me.btnAgregarViaje.Size = New System.Drawing.Size(46, 46)
-        Me.btnAgregarViaje.TabIndex = 11
-        Me.btnAgregarViaje.UseVisualStyleBackColor = False
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -161,7 +124,7 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.Label3.Location = New System.Drawing.Point(27, 147)
+        Me.Label3.Location = New System.Drawing.Point(19, 147)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(78, 25)
         Me.Label3.TabIndex = 8
@@ -171,7 +134,7 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.Label2.Location = New System.Drawing.Point(27, 76)
+        Me.Label2.Location = New System.Drawing.Point(19, 76)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(71, 25)
         Me.Label2.TabIndex = 7
@@ -181,7 +144,7 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.Label1.Location = New System.Drawing.Point(27, 24)
+        Me.Label1.Location = New System.Drawing.Point(19, 24)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(67, 25)
         Me.Label1.TabIndex = 6
@@ -235,9 +198,9 @@ Partial Class Form1
         Me.cboxDestino.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cboxDestino.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.cboxDestino.FormattingEnabled = True
-        Me.cboxDestino.Location = New System.Drawing.Point(25, 172)
+        Me.cboxDestino.Location = New System.Drawing.Point(17, 172)
         Me.cboxDestino.Name = "cboxDestino"
-        Me.cboxDestino.Size = New System.Drawing.Size(163, 28)
+        Me.cboxDestino.Size = New System.Drawing.Size(151, 28)
         Me.cboxDestino.TabIndex = 2
         '
         'cboxFecha
@@ -245,10 +208,10 @@ Partial Class Form1
         Me.cboxFecha.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
         Me.cboxFecha.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cboxFecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.cboxFecha.Location = New System.Drawing.Point(25, 49)
+        Me.cboxFecha.Location = New System.Drawing.Point(17, 49)
         Me.cboxFecha.Margin = New System.Windows.Forms.Padding(0)
         Me.cboxFecha.Name = "cboxFecha"
-        Me.cboxFecha.Size = New System.Drawing.Size(163, 23)
+        Me.cboxFecha.Size = New System.Drawing.Size(183, 23)
         Me.cboxFecha.TabIndex = 1
         '
         'cboxOrigen
@@ -257,9 +220,9 @@ Partial Class Form1
         Me.cboxOrigen.DisplayMember = "MODULO_ID"
         Me.cboxOrigen.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.cboxOrigen.FormattingEnabled = True
-        Me.cboxOrigen.Location = New System.Drawing.Point(25, 104)
+        Me.cboxOrigen.Location = New System.Drawing.Point(17, 104)
         Me.cboxOrigen.Name = "cboxOrigen"
-        Me.cboxOrigen.Size = New System.Drawing.Size(163, 28)
+        Me.cboxOrigen.Size = New System.Drawing.Size(151, 28)
         Me.cboxOrigen.TabIndex = 0
         Me.cboxOrigen.ValueMember = "MODULO_ID"
         '
@@ -280,34 +243,6 @@ Partial Class Form1
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Datos Personales"
-        '
-        'btnNuevoUsuario
-        '
-        Me.btnNuevoUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.btnNuevoUsuario.BackgroundImage = Global.SistemaPlanillaMovilidad.My.Resources.Resources.nuevo_usuario_40px
-        Me.btnNuevoUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.btnNuevoUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNuevoUsuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.btnNuevoUsuario.Location = New System.Drawing.Point(635, 27)
-        Me.btnNuevoUsuario.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnNuevoUsuario.Name = "btnNuevoUsuario"
-        Me.btnNuevoUsuario.Size = New System.Drawing.Size(46, 46)
-        Me.btnNuevoUsuario.TabIndex = 5
-        Me.btnNuevoUsuario.UseVisualStyleBackColor = False
-        '
-        'btnCrearRegistro
-        '
-        Me.btnCrearRegistro.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.btnCrearRegistro.BackgroundImage = Global.SistemaPlanillaMovilidad.My.Resources.Resources.guardar_40px
-        Me.btnCrearRegistro.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCrearRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCrearRegistro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.btnCrearRegistro.Location = New System.Drawing.Point(557, 27)
-        Me.btnCrearRegistro.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnCrearRegistro.Name = "btnCrearRegistro"
-        Me.btnCrearRegistro.Size = New System.Drawing.Size(46, 46)
-        Me.btnCrearRegistro.TabIndex = 4
-        Me.btnCrearRegistro.UseVisualStyleBackColor = False
         '
         'Label7
         '
@@ -355,37 +290,37 @@ Partial Class Form1
         Me.TablaViajes.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(206, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.TablaViajes.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TablaViajes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.TablaViajes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.TablaViajes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
         Me.TablaViajes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.TablaViajes.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.TablaViajes.DefaultCellStyle = DataGridViewCellStyle8
         Me.TablaViajes.GridColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.TablaViajes.Location = New System.Drawing.Point(250, 124)
         Me.TablaViajes.MultiSelect = False
         Me.TablaViajes.Name = "TablaViajes"
         Me.TablaViajes.ReadOnly = True
         Me.TablaViajes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(116, Byte), Integer), CType(CType(125, Byte), Integer), CType(CType(140, Byte), Integer))
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.TablaViajes.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(116, Byte), Integer), CType(CType(125, Byte), Integer), CType(CType(140, Byte), Integer))
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.TablaViajes.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
         Me.TablaViajes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.TablaViajes.Size = New System.Drawing.Size(700, 351)
         Me.TablaViajes.TabIndex = 2
@@ -432,6 +367,34 @@ Partial Class Form1
         Me.cboxMeses.TabIndex = 15
         Me.cboxMeses.Text = "Selecciona un mes"
         '
+        'btnNuevoUsuario
+        '
+        Me.btnNuevoUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.btnNuevoUsuario.BackgroundImage = Global.SistemaPlanillaMovilidad.My.Resources.Resources.nuevo_usuario_40px
+        Me.btnNuevoUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnNuevoUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNuevoUsuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.btnNuevoUsuario.Location = New System.Drawing.Point(635, 27)
+        Me.btnNuevoUsuario.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnNuevoUsuario.Name = "btnNuevoUsuario"
+        Me.btnNuevoUsuario.Size = New System.Drawing.Size(46, 46)
+        Me.btnNuevoUsuario.TabIndex = 5
+        Me.btnNuevoUsuario.UseVisualStyleBackColor = False
+        '
+        'btnCrearRegistro
+        '
+        Me.btnCrearRegistro.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.btnCrearRegistro.BackgroundImage = Global.SistemaPlanillaMovilidad.My.Resources.Resources.guardar_40px
+        Me.btnCrearRegistro.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCrearRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCrearRegistro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.btnCrearRegistro.Location = New System.Drawing.Point(557, 27)
+        Me.btnCrearRegistro.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnCrearRegistro.Name = "btnCrearRegistro"
+        Me.btnCrearRegistro.Size = New System.Drawing.Size(46, 46)
+        Me.btnCrearRegistro.TabIndex = 4
+        Me.btnCrearRegistro.UseVisualStyleBackColor = False
+        '
         'btnGenerarExcel
         '
         Me.btnGenerarExcel.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
@@ -445,6 +408,77 @@ Partial Class Form1
         Me.btnGenerarExcel.Size = New System.Drawing.Size(46, 46)
         Me.btnGenerarExcel.TabIndex = 12
         Me.btnGenerarExcel.UseVisualStyleBackColor = False
+        '
+        'btnNuevoDestino
+        '
+        Me.btnNuevoDestino.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.btnNuevoDestino.BackgroundImage = Global.SistemaPlanillaMovilidad.My.Resources.Resources.mas_40px
+        Me.btnNuevoDestino.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnNuevoDestino.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnNuevoDestino.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNuevoDestino.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.btnNuevoDestino.Location = New System.Drawing.Point(171, 166)
+        Me.btnNuevoDestino.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnNuevoDestino.Name = "btnNuevoDestino"
+        Me.btnNuevoDestino.Size = New System.Drawing.Size(39, 38)
+        Me.btnNuevoDestino.TabIndex = 16
+        Me.btnNuevoDestino.UseVisualStyleBackColor = False
+        '
+        'btnNuevoOrigen
+        '
+        Me.btnNuevoOrigen.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.btnNuevoOrigen.BackgroundImage = Global.SistemaPlanillaMovilidad.My.Resources.Resources.mas_40px
+        Me.btnNuevoOrigen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.btnNuevoOrigen.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnNuevoOrigen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNuevoOrigen.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.btnNuevoOrigen.Location = New System.Drawing.Point(171, 98)
+        Me.btnNuevoOrigen.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnNuevoOrigen.Name = "btnNuevoOrigen"
+        Me.btnNuevoOrigen.Size = New System.Drawing.Size(39, 39)
+        Me.btnNuevoOrigen.TabIndex = 15
+        Me.btnNuevoOrigen.UseVisualStyleBackColor = False
+        '
+        'btnLimpiar
+        '
+        Me.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.btnLimpiar.BackgroundImage = Global.SistemaPlanillaMovilidad.My.Resources.Resources.limpiar_40px
+        Me.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLimpiar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.btnLimpiar.Location = New System.Drawing.Point(142, 450)
+        Me.btnLimpiar.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnLimpiar.Name = "btnLimpiar"
+        Me.btnLimpiar.Size = New System.Drawing.Size(46, 46)
+        Me.btnLimpiar.TabIndex = 13
+        Me.btnLimpiar.UseVisualStyleBackColor = False
+        '
+        'btnEliminarViaje
+        '
+        Me.btnEliminarViaje.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.btnEliminarViaje.BackgroundImage = Global.SistemaPlanillaMovilidad.My.Resources.Resources.tacho_basura_40px
+        Me.btnEliminarViaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnEliminarViaje.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEliminarViaje.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.btnEliminarViaje.Location = New System.Drawing.Point(77, 450)
+        Me.btnEliminarViaje.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnEliminarViaje.Name = "btnEliminarViaje"
+        Me.btnEliminarViaje.Size = New System.Drawing.Size(46, 46)
+        Me.btnEliminarViaje.TabIndex = 12
+        Me.btnEliminarViaje.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnEliminarViaje.UseVisualStyleBackColor = False
+        '
+        'btnAgregarViaje
+        '
+        Me.btnAgregarViaje.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.btnAgregarViaje.BackgroundImage = Global.SistemaPlanillaMovilidad.My.Resources.Resources.guardar_40px
+        Me.btnAgregarViaje.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAgregarViaje.ForeColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.btnAgregarViaje.Location = New System.Drawing.Point(15, 450)
+        Me.btnAgregarViaje.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnAgregarViaje.Name = "btnAgregarViaje"
+        Me.btnAgregarViaje.Size = New System.Drawing.Size(46, 46)
+        Me.btnAgregarViaje.TabIndex = 11
+        Me.btnAgregarViaje.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -506,8 +540,10 @@ Partial Class Form1
     Friend WithEvents txtTotal As TextBox
     Friend WithEvents btnGenerarExcel As Button
     Friend WithEvents txtMonto As NumericUpDown
-    Private WithEvents cboxDestino As ComboBox
-    Private WithEvents cboxOrigen As ComboBox
     Friend WithEvents Label9 As Label
     Friend WithEvents cboxMeses As ComboBox
+    Friend WithEvents btnNuevoDestino As Button
+    Friend WithEvents btnNuevoOrigen As Button
+    Public WithEvents cboxDestino As ComboBox
+    Public WithEvents cboxOrigen As ComboBox
 End Class

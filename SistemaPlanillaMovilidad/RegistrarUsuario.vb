@@ -16,6 +16,8 @@ Public Class RegistrarUsuario
                 MsgBox("El dni debe contener 8 digitos")
             Else
                 SQL.CrearUsuario(txtNombre.Text, txtDni.Text)
+                Me.txtNombre.Text = ""
+                Me.txtDni.Text = ""
             End If
         Else
             MsgBox("Debe llenar todos los campos para contnuar")
@@ -32,4 +34,5 @@ Public Class RegistrarUsuario
         Hide()
 
     End Sub
+
 End Class

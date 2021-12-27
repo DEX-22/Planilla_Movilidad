@@ -47,6 +47,11 @@ SistemaPlanillaMovilidad
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:SistemaPlanillaMovilidad.My.Resources.Resources.mas_40px">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:SistemaPlanillaMovilidad.My.Resources.Resources.nuevo_usuario_40px">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
